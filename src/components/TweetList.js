@@ -1,17 +1,22 @@
 import React from "react";
+// imports bootstrap
 import { Card, Button } from "react-bootstrap";
+// imports hooks redux
 import { useDispatch, useSelector } from "react-redux";
+// imports actions
 import { deleteTweetAction } from "../actions/tweetsActions";
 
-export default function TweetList() {
+const TweetList = ()  =>  {
   const tweets = useSelector(state => state.tweets.tweets);
   return tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet} />);
 }
 
-function Tweet(props) {
+const Tweet = (props) => {
+  // destructuring
   const { tweet } = props;
+  // hook dispatch
   const dispatch = useDispatch();
-
+  // action 
   const deleteTweet = id => dispatch(deleteTweetAction(id));
 
   return (
@@ -26,3 +31,4 @@ function Tweet(props) {
     </Card>
   );
 }
+export default TweetList

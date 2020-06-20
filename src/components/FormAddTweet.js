@@ -47,8 +47,8 @@ export default function FormAddTweet() {
       errorForm(false);
       addTweet({
         id: uuid(),
-        name,
-        tweet,
+        name: name,
+        tweet: tweet,
         date: moment()
       });
       closeModal(false);

@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import action del reducer
 import { openCloseAddTweetModalAction } from "../actions/modalsActions";
 
-export default function Modal(props) {
+const Modal = (props) => {
   // los children son quienes renderizan el modal 
   // asi tenemos un modal reutilizable
   const { children } = props;
@@ -29,3 +29,4 @@ export default function Modal(props) {
     </ModalB>
   );
 }
+export default  Modal
