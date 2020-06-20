@@ -24,7 +24,7 @@ export default function FormAddTweet() {
   const addTweet = state => dispatch(addTweetAction(state));
   const closeModal = state => dispatch(openCloseAddTweetModalAction(state));
 
-  // Obtener estado de la validacion del fomrulario
+  // Obtener estado de la validacion del fomrulario - del reducer Errores para validar
   const errorFormValue = useSelector(
     state => state.validations.errorFormAddTweet
   );

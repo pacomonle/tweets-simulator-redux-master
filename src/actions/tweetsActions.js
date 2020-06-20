@@ -1,11 +1,12 @@
-export const addTweetAction = state => {
+// action crear tweet
+export const addTweetAction = (state) => {
   return {
     type: "ADD_TWEET",
     payload: state
   };
 };
-
-export const deleteTweetAction = id => {
+// action delete tweet
+export const deleteTweetAction = (id) => {
   return {
     type: "DELETE_TWEET",
     payload: id

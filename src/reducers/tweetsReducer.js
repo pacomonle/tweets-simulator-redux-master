@@ -1,3 +1,4 @@
+// state inicial
 const initialProps = {
   tweets: []
 };
