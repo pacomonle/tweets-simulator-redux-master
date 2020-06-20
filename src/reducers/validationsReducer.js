@@ -1,3 +1,5 @@
+
+// state inicial
 const initialProps = {
   errorFormAddTweet: false
 };
