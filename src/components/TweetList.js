@@ -8,9 +8,11 @@ import { deleteTweetAction } from "../actions/tweetsActions";
 
 const TweetList = ()  =>  {
   const tweets = useSelector(state => state.tweets.tweets);
+  // renderizar cada tweet
   return tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet} />);
 }
 
+// constante para renderizar tweet
 const Tweet = (props) => {
   // destructuring
   const { tweet } = props;
