@@ -8,7 +8,7 @@
     "lodash": "^4.17.19",
     "kind-of": "^6.0.3",
     "lodash.template": "^4.5.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "mixin-deep": "^2.0.1",
     "moment": "^2.24.0",
     "react": "^16.11.0",
