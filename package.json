@@ -10,7 +10,7 @@
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
